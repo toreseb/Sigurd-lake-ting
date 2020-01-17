@@ -15,8 +15,8 @@ class Plank{
   }
   
   void checkPlank(int n, int Plength, int pWidth){
-    for (int p = 1;p<n;p++){
-      for(int o = 1;o<n;o++){  
+    for (int p = 0;p<n;p++){
+      for(int o = 0;o<n;o++){  
         if (sqrt(sq(coordsX.get(p)-coordsX.get(o))+sq(coordsY.get(p)-coordsY.get(o)))<= Plength){
           makePlank(p,o,pWidth);
           println("yes");
